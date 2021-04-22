@@ -1,0 +1,73 @@
+@import "../../styles/colors.scss";
+.back{
+  float: right;
+  color:$black;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.title{
+  color:$black;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.repository_info{
+  margin-top: 80px;
+
+  header {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+    }
+
+    div {
+      margin-left: 24px;
+
+      strong {
+        font-size: 16px;
+        color: $grey_contrast;
+      }
+
+      p {
+        font-size: 18px;
+        color: $grey_light;
+        margin-top: 4px;
+      }
+    }
+  }
+  .info_repo{
+    border: 1px solid $grey_contrast;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    margin-top: 40px;
+
+
+    li {
+      & + li {
+        margin-left: 80px;
+      }
+
+      strong {
+        display: block;
+        font-size: 20px;
+        color: $grey_contrast;
+        text-decoration: none;
+      }
+      a{
+
+        text-decoration: none;
+      }
+
+    }
+  }
+}
