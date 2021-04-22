@@ -16,4 +16,4 @@ yarn install
 yarn start
 
 ```
-![Layout App](https://github.com/aeciotr/ghub/raw/master/public/layout.png)
+![Layout App](https://github.com/aeciotr/ghub/blob/main/public/layout.png)
