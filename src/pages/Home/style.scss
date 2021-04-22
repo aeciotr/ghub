@@ -1,40 +1,41 @@
 @import "../../styles/colors.scss";
-form{
+
+.form{
   margin-top: 40px;
   max-width: 940px;
   display: flex;
 
-  input {
+  &__input {
     flex: 1;
     height: 50px;
     padding: 0 24px;
     border: 0;
     border-radius: 5px 0 0 5px;
-    color: #3a3a3a;
-    background-color:#EEEEEE;
+    color: $grey_contrast;
+    background-color:$grey;
     border-right: 0;
 
     &::placeholder {
-      color: #a8a8b3;
+      color: $grey_contrast;
     }
   }
 
-  button {
+  &__button {
     width: 150px;
     height: 50px;
-    background: #000;
+    background: $black;
     border-radius: 0px 5px 5px 0px;
     border: 0;
-    color: #fff;
+    color: $white;
     font-weight: bold;
     transition: background-color 0.2s;
 
     &:hover {
-      background: #3a3838};
+      background: $grey_contrast};
     }
 }
 
-a.clear {
+.txt-clear {
   margin-top: 5px;
   display:block;
   color:#000;
@@ -81,7 +82,7 @@ div.user{
 
       strong {
         font-size: 20px;
-        color: $grey_light;
+        color: $black;
       }
 
       p {
@@ -98,18 +99,22 @@ div.user{
    text-decoration: none;
    width: 150px;
    margin-right: 5px;
+
+  &--repo{
+    background:$black;
+    color:$white;
+  }
+
+  &--star{
+    background:$grey;
+    color:$black;
+  }
+
  }
- .btn-repo{
-  background:$black;
-  color:$white;
-}
-.btn-star{
-  background:$grey;
-  color:$black;
-}
+
 
 @media (max-width: 599px) {
-  .btn{
+  .form__btn{
     display:block;
     text-align: center;
     margin-bottom: 15px;
@@ -118,7 +123,7 @@ div.user{
 
 }
 
-.__error{
+.--error{
   display: block;
   color: $red;
   margin-top: 8px

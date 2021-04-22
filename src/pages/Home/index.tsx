@@ -74,18 +74,19 @@ const Home: React.FC = () => {
     <>
     <Header/>
     <div className="container">
-      <form  onSubmit={handleAddUser}>
+      <form  className="form"onSubmit={handleAddUser}>
           <input
+            className="form__input"
             value={newUser}
             onChange={(e) => setNewUser(e.target.value)}
             placeholder="Digite o nome do usuário"
           />
-          <button type="submit">Pesquisar</button>
+          <button className="form__button" type="submit">Pesquisar</button>
 
         </form>
-        <a className="clear" href="" onClick={clear}>Limpar pesquisa</a>
+        <a className="txt-clear" href="" onClick={clear}>Limpar pesquisa</a>
 
-        {inputError && <span className="__error">{inputError}</span>}
+        {inputError && <span className="--error">{inputError}</span>}
 
         <div className="user">
           {users.map((user, index) => (
@@ -103,8 +104,8 @@ const Home: React.FC = () => {
                 <p>{user.blog}</p>
               </div>
               <div>
-              <Link className="btn btn-repo" to={`/repositories/${user.login}/repos`}> Repositorios </Link>
-              <Link className="btn btn-star" to={`/starreds/${user.login}/starred`}> Starreds </Link>
+              <Link className="btn btn--repo" to={`/repositories/${user.login}/repos`}> Repositorios </Link>
+              <Link className="btn btn--star" to={`/starreds/${user.login}/starred`}> Starreds </Link>
             </div>
               <FiChevronRight size={20} />
             </div>
