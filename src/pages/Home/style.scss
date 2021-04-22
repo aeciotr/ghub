@@ -83,12 +83,22 @@ div.user{
       strong {
         font-size: 20px;
         color: $black;
+
+        @media (max-width: 599px) {
+          font-size: 14px;
+        }
       }
 
       p {
         font-size: 16px;
         color: $grey_contrast;
         margin-top: 4px;
+
+        @media (max-width: 599px) {
+          font-size: 12px;
+        }
+
+
       }
     }
   }
@@ -114,7 +124,7 @@ div.user{
 
 
 @media (max-width: 599px) {
-  .form__btn{
+  .btn{
     display:block;
     text-align: center;
     margin-bottom: 15px;
